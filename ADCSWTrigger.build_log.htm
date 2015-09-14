@@ -3,18 +3,58 @@
 <pre>
 <h1>µVision Build Log</h1>
 <h2>Project:</h2>
-C:\Keil\LaunchPadware\ADCSWTrigger_4C123\ADCSWTrigger.uvproj
-Project File Date:  09/10/2015
+C:\Keil\LaunchPadware\Lab2-1\ADCSWTrigger.uvproj
+Project File Date:  09/12/2015
 
 <h2>Output:</h2>
 Rebuild target 'ADCSWTrigger'
 assembling startup.s...
 compiling ADCSWTrigger.c...
 compiling ADCTestMain.c...
+ADCTestMain.c(42): warning:  #1295-D: Deprecated declaration Calc_Jitter - give arg types
+  uint32_t Calc_Jitter(); // calculate jitter
+ADCTestMain.c(43): warning:  #1295-D: Deprecated declaration Calc_PMF - give arg types
+  void Calc_PMF(); // calculate freq
+ADCTestMain.c(44): warning:  #1295-D: Deprecated declaration User_Func - give arg types
+  void User_Func();
+ADCTestMain.c(169): warning:  #167-D: argument of type "volatile uint32_t *" is incompatible with parameter of type "int32_t *"
+                                ST7735_XYplot(1000, ADC_Data, ADC_Freq);
+ADCTestMain.c(169): warning:  #167-D: argument of type "volatile uint32_t *" is incompatible with parameter of type "int32_t *"
+                                ST7735_XYplot(1000, ADC_Data, ADC_Freq);
+ADCTestMain.c(149): warning:  #550-D: variable "Jitter" was set but never used
+                uint32_t Jitter;
+ADCTestMain.c(162): warning:  #177-D: variable "j" was declared but never referenced
+                        int j = 0;
+ADCTestMain.c(163): warning:  #177-D: variable "x" was declared but never referenced
+                        uint32_t x = 0;
+ADCTestMain.c(164): warning:  #177-D: variable "y" was declared but never referenced
+                        uint32_t y = 0;
+ADCTestMain.c(165): warning:  #177-D: variable "i" was declared but never referenced
+            int i = 0;
+ADCTestMain.c(235): warning:  #1-D: last line of file ends without a newline
+  }
+ADCTestMain.c: 11 warnings, 0 errors
 compiling PLL.c...
+compiling fixed.c...
+fixed.c(11): warning:  #1295-D: Deprecated declaration check_range - give arg types
+  int8_t check_range();
+fixed.c(12): warning:  #1295-D: Deprecated declaration error_handler - give arg types
+  void error_handler();
+fixed.c(13): warning:  #1295-D: Deprecated declaration error_handler2 - give arg types
+  void error_handler2();
+fixed.c(60): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+                ST7735_OutString((char*) fixed_number);  // display final result
+fixed.c(238): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+                ST7735_OutString((char*)fixed_val);
+fixed.c(251): warning:  #167-D: argument of type "char *" is incompatible with parameter of type "uint8_t *"
+                ST7735_OutString((char*)fixed_val);
+fixed.c: 6 warnings, 0 errors
+compiling ST7735.c...
 linking...
-Program Size: Code=2448 RO-data=32 RW-data=4 ZI-data=1124  
-".\ADCSWTrigger.axf" - 0 Error(s), 0 Warning(s).
-</pre>
-</body>
-</html>
+Program Size: Code=5252 RO-data=2052 RW-data=88 ZI-data=13120  
+".\ADCSWTrigger.axf" - 0 Error(s), 17 Warning(s).
+Load "C:\\Keil\\LaunchPadware\\Lab2-1\\ADCSWTrigger.axf" 
+Connecting: Mode=JTAG, Speed=1000000Hz
+Erase Done.
+Programming Done.
+Verify OK.

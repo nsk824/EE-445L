@@ -418,6 +418,16 @@
               <FileType>1</FileType>
               <FilePath>.\PLL.c</FilePath>
             </File>
+            <File>
+              <FileName>fixed.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\fixed.c</FilePath>
+            </File>
+            <File>
+              <FileName>ST7735.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\ST7735.c</FilePath>
+            </File>
           </Files>
         </Group>
       </Groups>

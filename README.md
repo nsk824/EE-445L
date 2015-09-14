@@ -1,2 +1,3 @@
 # EE-445L
-# group project
+Nikhil Kulkarni and Faniel Ghirmay
+Lab repo
